@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - EcoPlast Sustentabilidade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-container">
+        <span class="logo-text">EcoPlast</span>
+        <span class="logo-tag">Sustentabilidade</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">&#9776;</button>
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Início</a></li>
+          <li><a href="quem-somos.html" class="nav-link">Quem Somos</a></li>
+          <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+          <li><a href="contato.html" class="nav-link active">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Fale Conosco</h1>
+      <p>Entre em contato com nossa equipe para dúvidas, orçamentos ou parcerias em reciclagem e sustentabilidade.</p>
+    </section>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2 class="section-title">Informações de Contato</h2>
+
+        <div class="info-item">
+          <h4>Endereço Institucional</h4>
+          <p>Av. das Indústrias Verdes, 1050 - Distrito Industrial<br>São Paulo - SP, CEP 01234-567</p>
+        </div>
+
+        <div class="info-item">
+          <h4>Telefone e WhatsApp</h4>
+          <p>(11) 4004-9876 / (11) 98765-4321</p>
+        </div>
+
+        <div class="info-item">
+          <h4>E-mail</h4>
+          <p>contato@ecoplast-sustentavel.com.br</p>
+        </div>
+
+        <div class="info-item">
+          <h4>Horário de Atendimento</h4>
+          <p>Segunda a Sexta-feira, das 08h às 18h</p>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <h2 class="section-title">Envie uma Mensagem</h2>
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="nome">Nome Completo *</label>
+            <input type="text" id="nome" name="nome" class="form-control" placeholder="Seu nome completo" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="seuemail@exemplo.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="assunto">Assunto *</label>
+            <input type="text" id="assunto" name="assunto" class="form-control" placeholder="Assunto da mensagem" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" name="mensagem" class="form-control" placeholder="Escreva sua mensagem aqui..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%;">Enviar Mensagem</button>
+
+          <div id="formStatus" class="form-status" role="alert"></div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EcoPlast - Sustentabilidade e Reciclagem de Plásticos. Todos os direitos reservados.</p>
+    <p>Projeto Acadêmico de Desenvolvimento Frontend.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
